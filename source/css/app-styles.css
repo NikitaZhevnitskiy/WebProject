@@ -1,0 +1,38 @@
+body {
+    background-color: #eee;
+}
+
+
+form.form-signin {
+
+    font-weight: normal;
+    width: 300px;
+    margin: 0 auto;
+    overflow: visible;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+
+form.form-signin input,
+form.form-signin button
+{
+    margin-top: 0.5em;
+}
+
+form.form-signin label{
+    margin: -1.55em 0 0 0;
+    text-indent: 1.5em;
+    display: block;
+}
+.form-error {
+    border: 1px solid #f7c7c9;
+    padding: .8em 0 .8em 2em;
+    border-left-width: 4px;
+    background: #f9e5e6;
+    font-size: .85em;
+    color: #b3696c;
+}
