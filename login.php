@@ -34,8 +34,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     /**
-     * If error's array empty, try to login user.
-     * If login or password wrong write error
+     * 1. If error's array empty, try to login user.
+     * 2. If login or password wrong write error in array
      */
     if(count($loginErrors) === 0) {
         $result = checkUserLoginInfo($login, $password);
@@ -49,40 +49,51 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Log inn</title>
+        <!-- load CSS styles -->
+        <link href="/source/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/source/css/app-styles.css" rel="stylesheet" type="text/css">
+
+        <!-- load Scripts -->
+        <script src="/source/js/jquery.min.js" type="text/javascript"></script>
+        <script src="/source/js/bootstrap.min.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+
+        <div id="menu"></div>
+
+        <div id="content" class="container">
+
+                <!--login form START-->
+                <form class="form-signin" role="form" method="post" action="/login.php">
+                    <h2 class="form-signin-heading">Please sign in</h2>
+
+                    <?php
+                    /**
+                     * Show error info in case when input data wrong(login or password)
+                     */
+
+                        if(isset($loginErrors)) {
+                            echo '<ul class="form-error">';
+                            foreach($loginErrors as $error) {
+                                echo '<li>'.$error.'</li>';
+                            }
+                            echo  '</ul>';
+                        }
+                    ?>
+
+                    <input name="login" class="form-control" placeholder="Login" autocomplete="off">
+                    <input type="password" name="password" class="form-control" placeholder="Password" autocomplete="off">
 
 
-<?php
-/** header connect */
-require_once __DIR__ . '/content/header.php';
-?>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                </form>
+                <!--login form END-->
 
-
-<form class="form-signin" role="form" method="post" action="/login.php">
-    <h2 class="form-signin-heading">Please sign in</h2>
-
-    <?php
-    /**
-     * Fields show in case when input data wrong(login or password)
-     */
-
-        if(isset($loginErrors)) {
-            echo '<ul class="form-error">';
-            foreach($loginErrors as $error) {
-                echo '<li>'.$error.'</li>';
-            }
-            echo  '</ul>';
-        }
-    ?>
-
-    <input name="login" class="form-control" placeholder="Login" autocomplete="off">
-    <input type="password" name="password" class="form-control" placeholder="Password" autocomplete="off">
-
-
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-</form>
-
-
-<?php
-/** footer connect */
-require_once __DIR__ . '/content/footer.php';
-?>
+        </div>
+    </body>
+</html>

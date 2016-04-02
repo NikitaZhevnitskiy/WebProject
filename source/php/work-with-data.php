@@ -13,3 +13,9 @@ function cleanPostData($dataString)
 
     return $dataString;
 }
+function setTitle($title){
+    $_SESSION['title'] = $title;
+}
+function getTitle(){
+    return $_SESSION['title'];
+}
