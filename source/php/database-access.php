@@ -37,5 +37,15 @@ function checkUserLoginInfo($login, $password){
     }
 
 }
+function getFacultiesInfo(){
+    $connection = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
+    $statement = $connection->prepare("SELECT * FROM Faculties");
+    $statement->execute();
+    $statement->setFetchMode(PDO::FETCH_ASSOC);
+
+    $faculties = $statement->fetchAll();
+    return $faculties;
+
+}
 
 ?>

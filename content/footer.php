@@ -26,17 +26,17 @@ checkUserAuthentication();
                     <div id="Quick-links" class="col-xs-12 col-sm-4">
                         <h3>Quick links</h3>
                         <ul>
-                            <li><a href="www.kahoot.it"></a>www.kahoot.it</li>
-                            <li><a href="www.google.com"></a>www.google.com</li>
-                            <li><a href="www.yandex.ru"></a>www.yandex.ru</li>
-                            <li><a href="www.google.com"></a>www.google.com</li>
+                            <li><a href="http://www.kahoot.it">www.kahoot.it</a></li>
+                            <li><a href="http://www.google.com">www.google.com</a></li>
+                            <li><a href="http://www.yandex.ru">www.yandex.ru</a></li>
+                            <li><a href="http://www.google.com">www.google.com</a></li>
                         </ul>
                     </div>
                     <div id="Keep-in-touch" class="col-xs-12 col-sm-4">
                         <h3>Keep in touch</h3>
                         <ul>
-                            <li><a href="www.westerdals.no"></a>www.westerdals.no</li>
-                            <li><a href="mailto:post@westerdals.no"></a>post@westerdals.no</li>
+                            <li><a href="http://www.westerdals.no">www.westerdals.no</a></li>
+                            <li><a href="mailto:post@westerdals.no">post@westerdals.no</a></li>
                             <li>22 05 75 50</li>
                         </ul>
                     </div>

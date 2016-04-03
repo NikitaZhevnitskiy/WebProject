@@ -11,26 +11,26 @@ require_once __DIR__ . '/content/header.php';
 ?>
 
 
-<?php
-//Connect taks files !!!!
-    $tasksDir = __DIR__ .'/content/tasks/';
-    $files = scandir($tasksDir); // array with files in directory
-    $filesInfo = []; // array key/value  where key - time(timestamp), value fully path to file
+    <?php
+    //Connect tasks files !!!!
+        $tasksDir = __DIR__ .'/content/tasks/';
+        $files = scandir($tasksDir); // array with files in directory
+        $filesInfo = []; // array key/value  where key - time(timestamp), value fully path to file
 
-    foreach($files as $file) {
-        if(($file !== '.') && ($file !== '..')) { //miss directory file and up directory
-            $filesInfo[filemtime($tasksDir . $file)] = $tasksDir . $file; // key = value
+        foreach($files as $file) {
+            if(($file !== '.') && ($file !== '..')) { //miss directory file and up directory
+                $filesInfo[filemtime($tasksDir . $file)] = $tasksDir . $file; // key = value
+            }
         }
+
+        krsort($filesInfo); // key revert sorting. First new files
+
+        foreach($filesInfo as $file) {
+            require_once $file;
     }
 
-    krsort($filesInfo); // key revert sorting. First new files
 
-    foreach($filesInfo as $file) {
-        require_once $file;
-}
-
-
-?>
+    ?>
 
 
 

@@ -25,11 +25,15 @@ checkUserAuthentication();
 
         <!-- load CSS styles -->
         <link href="/source/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="/source/css/charts.min.css" rel="stylesheet" type="text/css">
         <link href="/source/css/app-styles.css" rel="stylesheet" type="text/css">
+
+
 
         <!-- load Scripts -->
         <script src="/source/js/jquery.min.js" type="text/javascript"></script>
         <script src="/source/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="/source/js/charts.min.js" type="text/javascript"></script>
 
     </head>
 

@@ -9,13 +9,13 @@
 <div class="task-container col-xs-6 col-sm-12 row">
     <div class="score">
         <div class="render-score"></div>
-        <div class="score-value">15<sup>pnts</sup></div>
+        <div class="score-value">25<sup>pnts</sup></div>
     </div>
 
-    <img src="/content/images/girl.jpg" class="col-xs-12 col-sm-4">
+    <img src="/content/images/event1.jpg" class="col-xs-12 col-sm-4">
 
     <div class="task-description col-xs-12 col-sm-8">
-        <h3>Task title</h3>
+        <h3>Super puper</h3>
 
         <p class="task-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
