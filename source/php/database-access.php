@@ -7,9 +7,9 @@
  */
 
 define('DB_HOST', 'localhost');
-define('DB_USER', 'admini');
-define('DB_PASS', 'admini');
-define('DB_NAME', 'PJ_project');
+define('DB_USER', 'westerda_user');
+define('DB_PASS', '737238ns');
+define('DB_NAME', 'westerda_PJ_project');
 
 
 function checkUserLoginInfo($login, $password){

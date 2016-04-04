@@ -98,11 +98,13 @@ html{
         background: #fff;
         margin: 0 auto 2em;
         padding: 0;
+        cursor: pointer;
     }
     .task-container img {
         width: 200px;
         height:200px;
         padding: 0;
+
 
     }
 
@@ -207,7 +209,35 @@ html{
     overflow: hidden;
 }
 
+.task-info {
+    width: 100%;
+    float: left;
+    padding: 1em;
+}
 
+.task-info .tel-text,
+.task-info .contact-text,
+.task-info .require-text {
+
+    border-bottom: 1px dotted #adadad;
+    font-style: italic;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.task-info span {
+    margin-right: 1em;
+}
+
+.task-info ul {
+    margin: 0.5em 0 .5em -1em;
+}
+.task-info .google-map {
+    height: 20em;
+}
+.task-preview{
+    float: left;
+}
 
 /******************************************************************/
 /*             Change displays for responsive design              */
@@ -275,6 +305,18 @@ html{
     .ct-bar{
         stroke-width: 80px;
     }
+    .task-info {
+        padding: 0.5em 0 0.5em 0;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .task-info span {
+        display: inherit;
+
+    }
+    .task-info .task-date span{
+        display: inherit;
+    }
 }
 
 /* Portrait displays for mobiles and smart-phones */
@@ -297,5 +339,17 @@ html{
     /*Grafik */
     .ct-bar{
         stroke-width: 40px;
+    }
+    .task-info {
+        padding: 0.5em 0 0.5em 0;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .task-info span {
+        display: inherit;
+
+    }
+    .task-info .task-date span{
+        display: inherit;
     }
 }

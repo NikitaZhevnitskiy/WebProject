@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="e9f90982-e5a5-43b6-87a8-4259df01ef65" name="server-deploy" url="http://ftp.westerdals.vodka">
+        <fileTransfer host="ftp.westerdals.vodka" port="21" password="df9ddf99df9ddf98df99df92dfc4dfd9" username="nikita">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,96 +1,96 @@
-{\rtf1\ansi\ansicpg1251\cocoartf1404\cocoasubrtf340
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+-- phpMyAdmin SQL Dump
+-- version 4.4.10
+-- http://www.phpmyadmin.net
+--
+-- Хост: localhost:8889
+-- Время создания: Апр 04 2016 г., 21:48
+-- Версия сервера: 5.5.42
+-- Версия PHP: 7.0.0
 
-\f0\fs24 \cf0 -- phpMyAdmin SQL Dump\
--- version 4.4.10\
--- http://www.phpmyadmin.net\
---\
--- Host: localhost:8889\
--- Time creation: \uc0\u1040 \u1087 \u1088  04 2016 \u1075 ., 08:55\
--- Server vers: 5.5.42\
--- PHP vers: 7.0.0\
-\
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";\
-SET time_zone = "+00:00";\
-\
---\
--- Data base: `PJ_project`\
---\
-\
--- --------------------------------------------------------\
-\
---\
--- Structure of table `Faculties`\
---\
-\
-CREATE TABLE `Faculties` (\
-  `ID` mediumint(8) unsigned NOT NULL,\
-  `FacultyName` varchar(30) NOT NULL,\
-  `Points` smallint(5) unsigned NOT NULL\
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;\
-\
---\
--- Data dump table `Faculties`\
---\
-\
-INSERT INTO `Faculties` (`ID`, `FacultyName`, `Points`) VALUES\
-(1, 'Communication', 152),\
-(2, 'Technology', 433),\
-(3, 'Management', 76),\
-(4, 'Art', 243);\
-\
--- --------------------------------------------------------\
-\
---\
--- Structure of table `Users`\
---\
-\
-CREATE TABLE `Users` (\
-  `ID` mediumint(8) unsigned NOT NULL,\
-  `User_name` varchar(20) NOT NULL,\
-  `Password` varchar(40) NOT NULL,\
-  `Name` varchar(50) NOT NULL,\
-  `LastName` varchar(50) NOT NULL\
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;\
-\
---\
--- Data dump table `Users`\
---\
-\
-INSERT INTO `Users` (`ID`, `User_name`, `Password`, `Name`, `LastName`) VALUES\
-(3, 'test1', 'b444ac06613fc8d63795be9ad0beaf55011936ac', 'Jack', 'Smith');\
-\
---\
--- Indexes saved tables\
---\
-\
---\
--- Indexes of table `Faculties`\
---\
-ALTER TABLE `Faculties`\
-  ADD PRIMARY KEY (`ID`);\
-\
---\
--- Indexes of table `Users`\
---\
-ALTER TABLE `Users`\
-  ADD PRIMARY KEY (`ID`),\
-  ADD UNIQUE KEY `User_name` (`User_name`);\
-\
---\
--- AUTO_INCREMENT for saved tables\
---\
-\
---\
--- AUTO_INCREMENT for table `Faculties`\
---\
-ALTER TABLE `Faculties`\
-  MODIFY `ID` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;\
---\
--- AUTO_INCREMENT for table `Users`\
---\
-ALTER TABLE `Users`\
-  MODIFY `ID` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;}
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- База данных: `PJ_project`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `Faculties`
+--
+
+CREATE TABLE `Faculties` (
+  `ID` mediumint(8) unsigned NOT NULL,
+  `FacultyName` varchar(30) NOT NULL,
+  `Points` smallint(5) unsigned NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+
+--
+-- Дамп данных таблицы `Faculties`
+--
+
+INSERT INTO `Faculties` (`ID`, `FacultyName`, `Points`) VALUES
+(1, 'Communication', 152),
+(2, 'Technology', 433),
+(3, 'Management', 76),
+(4, 'Art', 243);
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `Users`
+--
+
+CREATE TABLE `Users` (
+  `ID` mediumint(8) unsigned NOT NULL,
+  `User_name` varchar(20) NOT NULL,
+  `Password` varchar(40) NOT NULL,
+  `Name` varchar(50) NOT NULL,
+  `LastName` varchar(50) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+
+--
+-- Дамп данных таблицы `Users`
+--
+
+INSERT INTO `Users` (`ID`, `User_name`, `Password`, `Name`, `LastName`) VALUES
+(3, 'test1', 'b444ac06613fc8d63795be9ad0beaf55011936ac', 'Jack', 'Smith'),
+(4, 'siri', '3995a3476470ce2c0c01f75cee639e7d47357a62', 'Siri', 'Fagernes'),
+(5, 'nikita', '7afaa0a74c41394c7122fe61723ddc365f322a55', 'Nikita', 'Nikita'),
+(6, 'thomas', '5f50a84c1fa3bcff146405017f36aec1a10a9e38', 'Thomas', 'Thomas'),
+(7, 'nina', 'b443de4b0ff48581d8743a5f5cad5321e40054c2', 'Nina', 'Nina'),
+(8, 'marcus', '247731c75f3b277594afe05f8b1d0ee049da0b08', 'Marcus', 'Marcus'),
+(9, 'johannes', '8398eb9892c5ab2ff439ca0b5e4b0706dd9ebef9', 'johannes', 'johannes');
+
+--
+-- Индексы сохранённых таблиц
+--
+
+--
+-- Индексы таблицы `Faculties`
+--
+ALTER TABLE `Faculties`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Индексы таблицы `Users`
+--
+ALTER TABLE `Users`
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `User_name` (`User_name`);
+
+--
+-- AUTO_INCREMENT для сохранённых таблиц
+--
+
+--
+-- AUTO_INCREMENT для таблицы `Faculties`
+--
+ALTER TABLE `Faculties`
+  MODIFY `ID` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT для таблицы `Users`
+--
+ALTER TABLE `Users`
+  MODIFY `ID` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;

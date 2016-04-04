@@ -13,7 +13,7 @@
  *
  * @return bool
  */
-ob_start();
+
 session_start();
 function checkUserAuthentication(){
 

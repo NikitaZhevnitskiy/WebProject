@@ -34,6 +34,9 @@ checkUserAuthentication();
         <script src="/source/js/jquery.min.js" type="text/javascript"></script>
         <script src="/source/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="/source/js/charts.min.js" type="text/javascript"></script>
+        <script src="http://maps.google.com/maps/api/js?v=3.20&sensor=true"></script>
+        <script src="/source/js/jquery.map.min.js" type="text/javascript"></script>
+        <script src="/source/js/app-scripts.js" type="text/javascript"></script>
 
     </head>
 
