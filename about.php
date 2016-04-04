@@ -14,7 +14,6 @@ require_once __DIR__ . '/content/header.php';
 
     <div id="video-container">
         <video id="video-about" src="content/video/video.mp4" muted="muted" autoplay="autoplay" resource="video/mp4" loop="loop">
-
         </video>
     </div>
 

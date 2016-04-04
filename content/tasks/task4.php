@@ -14,7 +14,7 @@
         <div class="score-value">15<sup>pnts</sup></div>
     </div>
 
-    <img src="/content/images/44.jpeg" class="col-xs-12 col-sm-4">
+    <img src="/content/images/44.jpg" class="col-xs-12 col-sm-4">
 
     <div class="task-description col-xs-12 col-sm-8">
         <h3>Task title</h3>

@@ -3,9 +3,11 @@
 // autentication
 require_once __DIR__ . '/source/php/authentication.php';
 checkUserAuthentication();
+
 //setTitle
 require_once __DIR__ . '/source/php/work-with-data.php';
 setTitle('Current tasks');
+
 // header
 require_once __DIR__ . '/content/header.php';
 ?>
@@ -23,7 +25,7 @@ require_once __DIR__ . '/content/header.php';
             }
         }
 
-        krsort($filesInfo); // key revert sorting. First new files
+        krsort($filesInfo); // key(data) revert sorting. First new files
 
         foreach($filesInfo as $file) {
             require_once $file;
