@@ -239,6 +239,32 @@ html{
     float: left;
 }
 
+
+#team h2{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+#teamPicture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2em;
+
+}
+#team p{
+    font-style: italic;
+    text-align: center;
+}
+#team{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    border-radius: 1em;
+}
+
+
+
+
+
 /******************************************************************/
 /*             Change displays for responsive design              */
 /******************************************************************/
@@ -255,6 +281,9 @@ html{
     /*Grafik */
     .ct-bar{
         stroke-width: 130px;
+    }
+    #content{
+        padding-bottom: 5em;
     }
 }
 
@@ -353,3 +382,4 @@ html{
         display: inherit;
     }
 }
+
