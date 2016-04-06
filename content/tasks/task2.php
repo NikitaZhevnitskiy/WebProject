@@ -20,8 +20,8 @@
         <div class="task-description col-xs-12 col-sm-8">
             <h3>Basketball: Management vs Technology</h3>
 
-            <p class="task-text">Management scored many points like their last season. Management has emerged to be
-                mentally strong group.
+            <p class="task-text">Management scored many points like their last season.
+                Management has emerged to be mentally strong group.
             </p>
             <p class="task-date">Task date: </p><span>  2016-05-15/09:00</span>
         </div>

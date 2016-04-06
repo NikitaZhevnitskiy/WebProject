@@ -195,18 +195,24 @@ html{
 /*      RATING CHART END         */
 /*********************************/
 
-#video-container {
 
-
-}
-#video-about{
-    height: 500px;
-    position: absolute;
+#video-about {
     width: 100%;
-    top: 0;
-    z-index: -1;
-    left: 0;
-    overflow: hidden;
+    border: 0;
+    height: 35em;
+    display: block;
+    margin: auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px #d2d2d2;
+}
+
+#video-description{
+    box-shadow: 0 0 10px #d2d2d2;
+    max-width: 800px;
+    border-radius: 0 0 0.5em 0.5em;
+    background: #fff;
+    margin: 0 auto 2em;
+    padding: 1em;
 }
 
 .task-info {
@@ -262,6 +268,11 @@ html{
 }
 
 
+/*Log out btn*/
+#logout {
+    border-left: 2px dotted #777;
+}
+
 
 
 
@@ -310,7 +321,9 @@ html{
 
 /* Portrait tablets displays max 767px  */
 @media only screen and (max-width: 767px) {
-
+    #content{
+        padding-bottom: 5em;
+    }
 }
 
 /* Album displays for mobiles and smart-phones min 480px max 767 */
@@ -346,6 +359,9 @@ html{
     .task-info .task-date span{
         display: inherit;
     }
+    #rating-chart{
+        font-size: 0.55em;
+    }
 }
 
 /* Portrait displays for mobiles and smart-phones */
@@ -363,7 +379,7 @@ html{
     }
 
     #content{
-        padding-bottom: 25em;
+        padding-bottom: 18em;
     }
     /*Grafik */
     .ct-bar{
@@ -380,6 +396,9 @@ html{
     }
     .task-info .task-date span{
         display: inherit;
+    }
+    #rating-chart{
+        font-size: 0.55em;
     }
 }
 

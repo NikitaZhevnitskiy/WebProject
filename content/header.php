@@ -16,7 +16,7 @@ checkUserAuthentication();
 <!DOCTYPE html>
     <html>
     <head>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
             <?php
                 echo getTitle();
@@ -36,7 +36,9 @@ checkUserAuthentication();
         <script src="/source/js/charts.min.js" type="text/javascript"></script>
         <script src="http://maps.google.com/maps/api/js?v=3.20&sensor=true"></script>
         <script src="/source/js/jquery.map.min.js" type="text/javascript"></script>
+        <script src="/source/js/jquery.cookie.min.js" type="text/javascript"></script>
         <script src="/source/js/app-scripts.js" type="text/javascript"></script>
+
 
     </head>
 
@@ -60,6 +62,8 @@ checkUserAuthentication();
                     <li <?php if($_SERVER['SCRIPT_NAME'] === '/rating.php') { echo 'class="active"'; } ;?>><a href="/rating.php">Rating</a></li>
                     <li <?php if($_SERVER['SCRIPT_NAME'] === '/about.php') { echo 'class="active"'; } ;?>><a href="/about.php">About</a></li>
                     <li <?php if($_SERVER['SCRIPT_NAME'] === '/our-team.php') { echo 'class="active"'; } ;?>><a href="/our-team.php">Our Team</a></li>
+
+                    <li id="logout"><a href="">Log out</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->

@@ -52,6 +52,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Log inn</title>
         <!-- load CSS styles -->
         <link href="/source/css/bootstrap.min.css" rel="stylesheet" type="text/css">

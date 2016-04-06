@@ -27,8 +27,7 @@ checkUserAuthentication();
                         <h3>Quick links</h3>
                         <ul>
                             <li><a href="http://www.kahoot.it">www.kahoot.it</a></li>
-                            <li><a href="http://www.google.com">www.google.com</a></li>
-                            <li><a href="http://www.yandex.ru">www.yandex.ru</a></li>
+                            <li><a href="http://www.itslearning.com">www.itslearning.com</a></li>
                             <li><a href="http://www.google.com">www.google.com</a></li>
                         </ul>
                     </div>

@@ -18,11 +18,14 @@ require_once __DIR__ . '/content/header.php';
 
     </div>
 
+
     <?php
+    // get information from dataBase
     $faculties = getFacultiesInfo();
     ?>
 
     <script type="application/javascript">
+        // update grafikk table with rank on events(resize screen)
         $(window).on('resize', '#rating-chart', function() {
             chart.update();
         });

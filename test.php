@@ -1,4 +1,9 @@
 <?php
+// autentication
+require_once __DIR__ . '/source/php/authentication.php';
+checkUserAuthentication();
+
+
 /**
  * Created by PhpStorm.
  * User: NIK
