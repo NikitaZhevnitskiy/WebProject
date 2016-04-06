@@ -12,7 +12,7 @@ require_once __DIR__ . '/content/header.php';
 
 
     <div id="team">
-        <h2>Our team</h2>
+
         <img  src="/content/images/team.jpg" class="col-xs-12 col-sm-12" id="teamPicture" alt="team-picture">
         <p>From the left: Nina Luong, Marcus Waldal Ephithite, Thomas René Gabrielsen, Thomas August Nikolaisen, Nikita Zhevnitskiy,    Johannes Husa</p>
     </div>

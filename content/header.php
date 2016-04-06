@@ -58,7 +58,7 @@ checkUserAuthentication();
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li <?php if($_SERVER['SCRIPT_NAME'] === '/index.php') { echo 'class="active"'; } ;?>><a href="/">Tasks</a></li>
+                    <li <?php if($_SERVER['SCRIPT_NAME'] === '/tasks.php') { echo 'class="active"'; } ;?>><a href="/">Tasks</a></li>
                     <li <?php if($_SERVER['SCRIPT_NAME'] === '/rating.php') { echo 'class="active"'; } ;?>><a href="/rating.php">Rating</a></li>
                     <li <?php if($_SERVER['SCRIPT_NAME'] === '/about.php') { echo 'class="active"'; } ;?>><a href="/about.php">About</a></li>
                     <li <?php if($_SERVER['SCRIPT_NAME'] === '/our-team.php') { echo 'class="active"'; } ;?>><a href="/our-team.php">Our Team</a></li>

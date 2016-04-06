@@ -9,7 +9,7 @@
 
 /**
  * Check user's cookies on flag authentication in current session
- * if not, go to login.php
+ * if not, go to index.php
  *
  * @return bool
  */
@@ -21,13 +21,13 @@ function checkUserAuthentication(){
 
     if($_SESSION['login-status'] !== true) {
 
-        if($_SERVER['SCRIPT_NAME'] !== '/login.php') {
+        if($_SERVER['SCRIPT_NAME'] !== '/index.php') {
 
-            header('Location: /login.php', true, 302);
+            header('Location: /index.php', true, 302);
         }
     } else {
-        if($_SERVER['SCRIPT_NAME'] === '/login.php') {
-            header('Location: /index.php', true, 302);
+        if($_SERVER['SCRIPT_NAME'] === '/index.php') {
+            header('Location: /tasks.php', true, 302);
         }
     }
 
@@ -44,5 +44,5 @@ function setUserIdentifier($userData){
     $_SESSION['Name']= $userData['Name'];
     $_SESSION['ID']=$userData['ID'];
 
-    header('Location: /index.php', true, 302);
+    header('Location: /tasks.php', true, 302);
 }

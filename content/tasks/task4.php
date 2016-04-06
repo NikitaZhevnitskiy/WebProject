@@ -12,7 +12,7 @@
     <div class="task-preview">
         <div class="score">
             <div class="render-score"></div>
-            <div class="score-value">30<sup>pnts</sup></div>
+            <div class="score-value">30<sup>pts</sup></div>
         </div>
 
         <img src="/content/images/teacher.jpeg" class="col-xs-12 col-sm-4">

@@ -130,7 +130,7 @@ html{
             left: 0;
             border-top: 80px solid transparent;
             border-bottom: 80px solid transparent;
-            border-left: 80px solid #60707B;
+            border-left: 80px solid #FF7800;
         }
 
         .score-value {
@@ -195,7 +195,7 @@ html{
 /*      RATING CHART END         */
 /*********************************/
 
-
+/*Video box settings START*/
 #video-about {
     width: 100%;
     border: 0;
@@ -214,6 +214,7 @@ html{
     margin: 0 auto 2em;
     padding: 1em;
 }
+/*Video box settings END*/
 
 .task-info {
     width: 100%;
@@ -265,6 +266,10 @@ html{
 #team{
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     border-radius: 1em;
+    background-color: #fff;
+    padding-top: 1em;
+    margin: auto;
+    max-width: 800px;
 }
 
 
@@ -362,6 +367,15 @@ html{
     #rating-chart{
         font-size: 0.55em;
     }
+    .task-description h3 {
+
+        height: 6em;
+        overflow: hidden;
+    }
+    .task-description .task-text {
+        height: 10em;
+        overflow: hidden;
+    }
 }
 
 /* Portrait displays for mobiles and smart-phones */
@@ -399,6 +413,9 @@ html{
     }
     #rating-chart{
         font-size: 0.55em;
+    }
+    #video-about{
+        height: 20em;
     }
 }
 

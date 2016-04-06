@@ -45,11 +45,11 @@ $(document).ready(function(){
     *       which has standard event
     *
     *   call removeCookie with name('PHPSESSID') for all pages in root
-    *   redirect to login.php
+    *   redirect to index.php
     */
     $('#logout').on('click', function(event){
         event.preventDefault();
         $.removeCookie('PHPSESSID', { path: '/' });
-        document.location.href = '/login.php';
+        document.location.href = '/index.php';
     });
 });

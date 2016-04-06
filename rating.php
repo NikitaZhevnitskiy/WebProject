@@ -57,10 +57,10 @@ require_once __DIR__ . '/content/header.php';
 
             // each colums style (color)
             var bars = $('.ct-bar');
-            bars.eq(0).attr('style', 'stroke: #3d9d34');
-            bars.eq(1).attr('style', 'stroke: #b93e31');
-            bars.eq(2).attr('style', 'stroke: #446bb9');
-            bars.eq(3).attr('style', 'stroke: #b95aa0');
+            bars.eq(0).attr('style', 'stroke: #fed167');
+            bars.eq(1).attr('style', 'stroke: #61afca');
+            bars.eq(2).attr('style', 'stroke: #7b5781');
+            bars.eq(3).attr('style', 'stroke: #7ec79c');
         });
 
     </script>

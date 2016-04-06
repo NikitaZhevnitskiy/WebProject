@@ -12,7 +12,7 @@
     <div class="task-preview">
         <div class="score">
             <div class="render-score"></div>
-            <div class="score-value">10<sup>pnts</sup></div>
+            <div class="score-value">10<sup>pts</sup></div>
         </div>
 
         <img src="/content/images/leagOfLegends.jpg" class="col-xs-12 col-sm-4">
