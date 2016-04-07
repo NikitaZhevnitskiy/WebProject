@@ -27,7 +27,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
      */
     $loginErrors = array();
     if($password === "") {
-        $loginErrors[] = "Passwod field can not be empty";
+        $loginErrors[] = "Password field can not be empty";
     }
     if($login === "") {
         $loginErrors[] = "Login field can not be empty";
@@ -42,7 +42,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         if($result !== false) {
             setUserIdentifier($result);
         } else {
-            $loginErrors[] = 'Inncorect data input, try again';
+            $loginErrors[] = 'Incorrect data input, try again';
         }
     }
 }
@@ -69,9 +69,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <div id="content" class="container">
 
+
+
+
+
                 <!--login form START-->
-                <form class="form-signin" role="form" method="post" action="/index.php">
-                    <h2 class="form-signin-heading">Please sign in</h2>
+                <form class="form-signin" method="post" action="/index.php">
+                    <img id="logoW"  src="/content/images/logo.jpg" class="col-xs-12 col-sm-12" id="teamPicture" alt="team-picture">
+
 
                     <?php
                     /**
@@ -92,9 +97,17 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
                     <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
                 </form>
                 <!--login form END-->
 
+
+
+
+
         </div>
+
+
+
     </body>
 </html>

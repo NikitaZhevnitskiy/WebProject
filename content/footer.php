@@ -17,9 +17,9 @@ checkUserAuthentication();
             <div class="row">
                     <div id="About-us" class="col-xs-12 col-sm-4">
                         <h3>About us</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        <p>Westerdals.vodka is made by 6 people studying technology at Westerdals.
+                            This is our exam project for the subject PJ2100.
+                            We made this site because we want better environment between all the departments at Westerdals.
                         </p>
 
                     </div>

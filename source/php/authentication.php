@@ -40,9 +40,9 @@ function checkUserAuthentication(){
  */
 function setUserIdentifier($userData){
     $_SESSION['login-status'] = true;
-    $_SESSION['LastName'] = $userData['LastName'];
-    $_SESSION['Name']= $userData['Name'];
-    $_SESSION['ID']=$userData['ID'];
+    $_SESSION['LastName'] = $userData['lastName'];
+    $_SESSION['Name']= $userData['name'];
+    $_SESSION['ID']=$userData['id'];
 
     header('Location: /tasks.php', true, 302);
 }

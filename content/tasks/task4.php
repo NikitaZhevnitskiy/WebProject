@@ -22,9 +22,15 @@
 
             <p class="task-text">
                 &quot;Teacher of the Year&quot; will be awarded to a teacher or a group of teachers who create a
-                good learning environment. It is approaching. We will see who is the winner soon.
+                good learning environment. We will see who is the winner soon.
             </p>
-            <p class="task-date">Task date: </p><span>  2016-05-25/10:30</span>
+            <p class="task-date">Task date: </p><span> 2016-05-25/10:30</span>
+
+            <!--Button More info START-->
+            <div class="blockB">
+                <button class="btn moreInfo" >More info</button>
+            </div>
+            <!--Button More info  END-->
         </div>
     </div>
 

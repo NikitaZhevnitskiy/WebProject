@@ -18,12 +18,20 @@
         <img src="/content/images/basketball.jpg" class="col-xs-12 col-sm-4">
 
         <div class="task-description col-xs-12 col-sm-8">
-            <h3>Basketball: Management vs Technology</h3>
+            <h3>Basketball: Management vs Technology. Mixed teams: girls and boys</h3>
 
             <p class="task-text">Management scored many points like their last season.
-                Management has emerged to be mentally strong group.
+                Management has emerged  to be mentally strong group. Play in team. Win the competition!
+
             </p>
-            <p class="task-date">Task date: </p><span>  2016-05-15/09:00</span>
+            <p class="task-date">Task date: </p><span>  2016-05-25/10:30</span>
+
+            <!--Button More info START-->
+            <div class="blockB">
+                <button class="btn moreInfo" >More info</button>
+            </div>
+            <!--Button More info  END-->
+
         </div>
     </div>
 
@@ -33,7 +41,6 @@
             <ul>
                 <li>Sport equipment</li>
                 <li>21+ age, after-party</li>
-                <li>You must be a student of Westerdals</li>
             </ul>
             <div class="tel-text">telephone:</div><span>56-75-65</span>
             <div class="contact-text">Contact:</div><span> Nina Luong</span>

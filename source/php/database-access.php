@@ -9,7 +9,7 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'westerda_user');
 define('DB_PASS', '737238ns');
-define('DB_NAME', 'westerda_PJ_project');
+define('DB_NAME', 'westerda_pj_project');
 
 /**
  * Connection with database onCall checkUserLoginInfo function
@@ -22,7 +22,7 @@ define('DB_NAME', 'westerda_PJ_project');
  */
 function checkUserLoginInfo($login, $password){
     $connection = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
-    $statement = $connection->prepare("SELECT * FROM Users WHERE User_name=:loginString");
+    $statement = $connection->prepare("SELECT * FROM users WHERE user_name=:loginString");
     $statement -> bindParam(':loginString', $login);
     $statement->execute();
     $statement->setFetchMode(PDO::FETCH_ASSOC);
@@ -31,7 +31,7 @@ function checkUserLoginInfo($login, $password){
 
 
     if($user !== null){
-        $hashPass = $user['Password'];
+        $hashPass = $user['password'];
         $inputPass = sha1($password); // 40 symbols in output after hash-function
 
         if($hashPass === $inputPass){
@@ -54,7 +54,7 @@ function checkUserLoginInfo($login, $password){
  */
 function getFacultiesInfo(){
     $connection = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
-    $statement = $connection->prepare("SELECT * FROM Faculties");
+    $statement = $connection->prepare("SELECT * FROM faculties");
     $statement->execute();
     $statement->setFetchMode(PDO::FETCH_ASSOC);
 

@@ -21,9 +21,17 @@
             <h3>Beerpong: Manager has climbed again to the top</h3>
 
             <p class="task-text">
-                With the victory of Art they are on track. It has been an adventure for their team. Manager has been lucky to have avoided injuries to key players.
+                With the victory of Art they are on track. It has been an adventure for their team.
+                Win the competition!!! Join now!!!
             </p>
-            <p class="task-date">Task date: </p><span>  2016-05-25/20:30</span>
+            <p class="task-date">Task date: </p><span> 2016-05-25/20:30</span>
+
+            <!--Button More info START-->
+            <div class="blockB" >
+                <button class="btn moreInfo" >More info</button>
+            </div>
+            <!--Button More info  END-->
+
         </div>
     </div>
 

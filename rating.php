@@ -18,6 +18,12 @@ require_once __DIR__ . '/content/header.php';
 
     </div>
 
+    <div id="rank-description">
+        <h2>
+            Faculties points
+        </h2>
+    </div>
+
 
     <?php
     // get information from dataBase
@@ -34,7 +40,7 @@ require_once __DIR__ . '/content/header.php';
             labels: [
                 <?php
                 foreach($faculties as $faculty) {
-                    echo "'". $faculty['FacultyName'] ."', ";
+                    echo "'". $faculty['facultyName'] ."', ";
                 }
                 ?>
             ],
@@ -42,7 +48,7 @@ require_once __DIR__ . '/content/header.php';
                 [
                     <?php
                     foreach($faculties as $faculty) {
-                        echo $faculty['Points'] .", ";
+                        echo $faculty['points'] .", ";
                     }
                     ?>
                 ]
@@ -55,7 +61,7 @@ require_once __DIR__ . '/content/header.php';
         // bar connect with event CREATED
         window.chart = new Chartist.Bar('#rating-chart', data).on('created', function() {
 
-            // each colums style (color)
+            // each columns style (color)
             var bars = $('.ct-bar');
             bars.eq(0).attr('style', 'stroke: #fed167');
             bars.eq(1).attr('style', 'stroke: #61afca');

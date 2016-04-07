@@ -20,12 +20,16 @@
         <div class="task-description col-xs-12 col-sm-8">
             <h3>LOL: Manager should probably avoid all Technology preparations</h3>
 
-            <p class="task-text">We have hired House of
-                Nerds venue to have a LoL tournament. 
-                You can only have one team per division. 
-                The tournament will be streamed on the twitch of cinnamon.
+            <p class="task-text">We  have hired House of Nerds venue  to have a LoL tournament. You can only have one team per division.
             </p>
             <p class="task-date">Task date: </p><span>  2016-05-25/10:30</span>
+
+            <!--Button More info START-->
+            <div class="blockB"">
+                <button class="btn moreInfo" >More info</button>
+            </div>
+            <!--Button More info  END-->
+
         </div>
     </div>
 

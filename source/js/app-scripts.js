@@ -15,8 +15,8 @@
  * map status set active
  */
 $(document).ready(function(){
-    $('.task-preview').on('click', function(){
-        var taskInfo = $(this).siblings('.task-info');
+    $('.moreInfo').on('click', function(){ // .task-preview
+        var taskInfo = $(this).closest('.task-preview').siblings('.task-info');
         taskInfo.slideToggle();
 
         var map = taskInfo.find('.google-map');
@@ -37,12 +37,13 @@ $(document).ready(function(){
         }
     });
 
+
     /*  LOG OUT
-    *   find element with id logout. Create event on click. Put paremeter event
+    *   find element with id='logout'. Create event on click. Put paremeter event
     *   override of standard event to null.
     *
-    *       ps. Because element with id logout locates in tag <a>,
-    *       which has standard event
+    *       ps. Neccesary to override because element with id logout locates in tag <a>,
+    *       this tag has standard event
     *
     *   call removeCookie with name('PHPSESSID') for all pages in root
     *   redirect to index.php
