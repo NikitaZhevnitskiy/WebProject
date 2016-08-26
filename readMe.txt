@@ -6,3 +6,7 @@ www.westerdals.vodka
 
 userName: siri
 pass:     siri
+
+How to set up? 
+1. Download the project
+2. Change WebProject/source/php/database-access.php    with ur own settings
