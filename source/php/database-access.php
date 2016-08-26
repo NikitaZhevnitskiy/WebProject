@@ -5,11 +5,12 @@
  * Date: 31.03.16
  * Time: 20:14
  */
-
+ 
+// SET UP YOUR SETTINGS HERE 
 define('DB_HOST', 'localhost');
-define('DB_USER', 'westerda_user');
-define('DB_PASS', '737238ns');
-define('DB_NAME', 'westerda_pj_project');
+define('DB_USER', '??????????');
+define('DB_PASS', '??????????');
+define('DB_NAME', '??????????');
 
 /**
  * Connection with database onCall checkUserLoginInfo function
